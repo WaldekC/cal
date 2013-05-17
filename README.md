@@ -1,4 +1,4 @@
 cal
 ===
 
-simple plugin swapping checkboxes to links with status
+simple jquery plugin swapping checkboxes to links with status changes
