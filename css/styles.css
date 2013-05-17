@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+body {
+    background: #f0f0f0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.header .icon-coffee {
+    color: #fff;
+    font-size: 34pt;
+}

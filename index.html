@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Checkbox as Links</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/jquery.cal.css" />
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.cal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="span12 header">
+            <div class="span6">
+                <a href="#" class="logo"><span class="icon-coffee"></span></a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="span12">
+            <form action="#" class="form-horizontal">
+                <div class="control-group">
+                    <div class="controls">
+                        <ul class="unstyled">
+                            <li><label for="checkbox1" class="checkbox">Checkbox 01<input type="checkbox" class="cal" id="checkbox1" /></label></li>
+                            <li><label for="checkbox2" class="checkbox">Checkbox 02<input type="checkbox" class="cal" id="checkbox2" /></label></li>
+                            <li><label for="checkbox3" class="checkbox">Checkbox 03<input type="checkbox" class="cal" id="checkbox3" /></label></li>
+                            <li><label for="checkbox4" class="checkbox">Checkbox 04<input type="checkbox" class="cal" id="checkbox4" /></label></li>
+                            <li><label for="checkbox5" class="checkbox">Checkbox 05<input type="checkbox" class="cal" id="checkbox5" /></label></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span12 footer">
+            <ul class="unstyled">
+            	<li><a href="mailto:waldek.ciara@gmail.com"><span class="icon-envelope-alt"></span> waldek.ciara@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.cal').cal();
+    });
+    </script>
+</body>
+</html>

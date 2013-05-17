@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+a.cal-link {
+    color: #000;
+}
+
+a.cal-link-marked, a:hover {
+    color: #0000ff;
+}
