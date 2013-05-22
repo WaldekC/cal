@@ -26,11 +26,20 @@
                 <div class="control-group">
                     <div class="controls">
                         <ul class="unstyled">
-                            <li><label for="checkbox1" class="checkbox">Checkbox 01<input type="checkbox" class="cal" id="checkbox1" /></label></li>
-                            <li><label for="checkbox2" class="checkbox">Checkbox 02<input type="checkbox" class="cal" id="checkbox2" /></label></li>
-                            <li><label for="checkbox3" class="checkbox">Checkbox 03<input type="checkbox" class="cal" id="checkbox3" /></label></li>
-                            <li><label for="checkbox4" class="checkbox">Checkbox 04<input type="checkbox" class="cal" id="checkbox4" /></label></li>
-                            <li><label for="checkbox5" class="checkbox">Checkbox 05<input type="checkbox" class="cal" id="checkbox5" /></label></li>
+                            <li><label for="checkbox1" class="checkbox">Checkbox 01<input type="checkbox" class="cal-checkbox" id="checkbox1" /></label></li>
+                            <li><label for="checkbox2" class="checkbox">Checkbox 02<input type="checkbox" class="cal-checkbox" id="checkbox2" /></label></li>
+                            <li><label for="checkbox3" class="checkbox">Checkbox 03<input type="checkbox" class="cal-checkbox" id="checkbox3" /></label></li>
+                            <li><label for="checkbox4" class="checkbox">Checkbox 04<input type="checkbox" class="cal-checkbox" id="checkbox4" /></label></li>
+                            <li><label for="checkbox5" class="checkbox">Checkbox 05<input type="checkbox" class="cal-checkbox" id="checkbox5" /></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <ul class="unstyled">
+                            <li><label for="radio1" class="radio"><input type="radio" name="rdio" class="cal-radio" id="radio1" checked="checked" /> Radio 01</label></li>
+                            <li><label for="radio2" class="radio"><input type="radio" name="rdio" class="cal-radio" id="radio2" /> Radio 02</label></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -44,7 +53,8 @@
     </div>
     <script type="text/javascript">
     $(document).ready(function(){
-        $('.cal').cal();
+        $('.cal-checkbox').cal();
+        $('.cal-radio').cal();
     });
     </script>
 </body>
