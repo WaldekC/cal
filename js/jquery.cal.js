@@ -14,9 +14,12 @@
         };
         
         var prepareCheckbox = function(anchor, input) {
+            if(input.attr('checked') != null) {
+                $(anchor).addClass(settings.link_class_marked).removeClass(settings.link_class);
+            }
             anchor.on('click', function(e) {
                 e.preventDefault();
-                if (input.is(':checked')) {
+                if (input.attr('checked') != null) {
                     input.removeAttr('checked');
                     $(anchor).removeClass(settings.link_class_marked).addClass(settings.link_class);
                 } else {
@@ -27,12 +30,15 @@
         };
         
         var prepareRadio = function(anchor, input) {
+            if(input.attr('checked') != null) {
+                $(anchor).addClass(settings.link_class_marked).removeClass(settings.link_class);
+            }
             anchor.on('click', function(e) {
                 e.preventDefault();
                 that.each(function(){
                     $(this).removeAttr('checked');
                 });
-                $('.' + settings.link_class_marked).removeClass(settings.link_class_marked);
+                $('.' + settings.link_class_marked).removeClass(settings.link_class_marked).addClass(settings.link_class);
                 $(anchor).addClass(settings.link_class_marked);
                 input.attr('checked', 'checked');
             });
