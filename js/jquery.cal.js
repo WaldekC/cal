@@ -35,9 +35,6 @@
             }
             anchor.on('click', function(e) {
                 e.preventDefault();
-                that.each(function(){
-                    $(this).removeAttr('checked');
-                });
                 $('.' + settings.link_class_marked).removeClass(settings.link_class_marked).addClass(settings.link_class);
                 $(anchor).addClass(settings.link_class_marked);
                 input.attr('checked', 'checked');
